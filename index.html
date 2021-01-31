@@ -3,55 +3,60 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
+			href="img/favicon-32x32.png"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<title>Frontend Mentor | Profile card component</title>
-
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Frontend Mentor | Profile Card Component</title>
 	</head>
 	<body>
 		<div class="container">
-			<header>
-				<div class="avatar"></div>
-			</header>
-			<main>
-				<h3>Victor Crest <span class="age">26</span></h3>
-				<p class="location">London</p>
+			<span class="screen-reader-only">Profile Card Component Example</span>
+
+			<main class="container__main">
+				<article class="card">
+					<header class="card__header">
+						<div class="card__header-title">
+							<h1 class="card__header-name">Victor Crest</h1>
+							<p class="card__header-age">
+								<span class="screen-reader-only">That is age</span>
+								26
+							</p>
+						</div>
+						<p class="card__header-location">London</p>
+						<div class="card__header-img">
+							<img src="images/image-victor.jpg" alt="Victor" />
+						</div>
+					</header>
+
+					<footer>
+						<span class="screen-reader-only">Profile statistics</span>
+
+						<ul class="card__stats">
+							<li class="card__stats-list">
+								<span class="card__stats-list-number">80K</span>
+								<span class="card__stats-list-label">Followers</span>
+							</li>
+							<li class="card__stats-list">
+								<span class="card__stats-list-number">803K</span>
+								<span class="card__stats-list-label">Likes</span>
+							</li>
+							<li class="card__stats-list">
+								<span class="card__stats-list-number">1.4K</span>
+								<span class="card__stats-list-label">Photos</span>
+							</li>
+						</ul>
+					</footer>
+				</article>
 			</main>
-			<footer>
-				<div class="col">
-					<h3>80K</h3>
-					<small>Followers</small>
-				</div>
-				<div class="col">
-					<h3>80K</h3>
-					<small>Likes</small>
-				</div>
-				<div class="col">
-					<h3>1.4K</h3>
-					<small>Photos</small>
-				</div>
-			</footer>
 		</div>
 	</body>
 </html>
